@@ -19,5 +19,13 @@ def buy():
 @app.route('/projects/')
 def projects():
     return render_template("projects.html")
-
+@app.route('/timer/')
+def timer():
+    return render_template("timer.html")
+@app.route('/extra/')
+def extra():
+    return render_template("extra.html")
+@app.route('/snakegame/')
+def snakegame():
+    return render_template("snake_game/snakegame.html")
 app.run(host='0.0.0.0', port=8080)

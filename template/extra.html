@@ -7,7 +7,6 @@
     margin:3vmin;
     margin-top: 3vmin;
     gap: 3vmin;
-    flex-wrap: wrap;
 
 }
 .mainbox{
@@ -52,25 +51,17 @@ ab{
 <div class="boxlayout">
     <div class="mainbox">
         <img src="{{ url_for('static', filename='a.png') }}" alt="my icon">
-        <ab>this is my project link page</ab>
+        <ab>this is for all extra stuff</ab>
     </div>
     <div class="mainbox">
-        <img src="{{ url_for('static', filename='this_site.png') }}" alt="thissite">
-        <a class="myButton" href="https://github.com/pravda-cancri/my-site"target="_blank">This website</a>
+        <img src="{{ url_for('static', filename='timer.png') }}" alt="thissite">
+        <a class="myButton" href="{{url_for('timer')}}">Timer</a>
     </div>
     <div class="mainbox">
-        <img src="{{ url_for('static', filename='obsall.png') }}" alt="obsall">
-        <a class="myButton" href="https://github.com/pravda-cancri/School-work-objectives"target="_blank">OBS All</a>
+        <img src="{{ url_for('static', filename='snakegame.png') }}" alt="snakegame">
+        <a class="myButton" href="{{url_for('snakegame')}}">Snake Game</a>
     </div>
-    <div class="mainbox">
-        <img src="{{ url_for('static', filename='obsall.png') }}" alt="obsold">
-        <a class="myButton" href="https://github.com/pravda-cancri/School-work-objectives"target="_blank">old version of obs all</a>
-    </div>
-    <div class="mainbox">
-        <img src="{{ url_for('static', filename='snakegame.png') }}" alt="snake game">
-        <a class="myButton" href="https://github.com/pravda-cancri/snake-game-alpha"target="_blank">snake game alpha</a>
-    </div>
-    
+   
 </div>
 
 {%endblock%}
