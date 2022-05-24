@@ -1,23 +1,26 @@
+<title>Front Page</title>
 {%extends "layout.html"%}
 {% block content %}
 <style>
-.boxlayout{
+.boxlayoutmain{
     display: grid;
     margin:3vmin;
     margin-top: 3vmin;
     gap: 3vmin;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: .5fr repeat(5, 1fr) auto;
     grid-template-areas:
-        "pic   hd   hd   hd   hd   hd   hd   hd   hd"
-        "sd   sd   sd  main main main main main main"
+        "pic hd hd hd hd hd hd hd hd"
+        "sd sd sd main main main main main main"
         "sd sd sd main main main main main main"
         "sd sd sd main main main main main main"
 }
-.boxlayout > div {
+.boxlayoutmain > div {
     width: 100%;
     height: 100%;
+
     margin: auto;
+    
+    border-radius:8px;
     background-color:#f0f0f0;
     background-size: 100%;
     text-align: center;
@@ -34,215 +37,92 @@
 .main{
     grid-area:main;
 }
-</style>
-<div class="boxlayout">
-    <div class="hd"><a>lol</a></div>
-    <div class="pic"><a>lol</a></div>
-    <div class="sd"><a>lol</a></div>
-    <div class="main"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>    
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>    
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>    
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>    
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>    
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>    
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>    
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>    
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>    
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
-    <div class="bottombar"><a>lol</a></div>
 
+
+img{
+    border-radius:10px 10px 0px 0px;
+}
+.mainboxmainpage{
+    max-width:200px;
+    width: 100%;
+    height: 100%;
+    font-size:10px;
+    text-align: center;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+x{
+    font-size:15px;
+    width:100%;
+    border-radius:8px;
+    background-color:#c2c2c2;
+}
+
+.maxsize{
+    max-width:90px;
+    width:90px;
+    height:90px;
+}
+</style>
+<div class="boxlayoutmain">
+    <div class="hd"><a>lol</a></div>
+    <div class="pic"><img class="maxsize" src="{{ url_for('static', filename='a.webp') }}" alt="walk"></div>
+
+    
+    <div class="sd">
+        <div class="boxlayout">
+            <x><a>Youtube Videos</a></x>
+            <div class="mainboxmainpage">
+                <img src="https://img.youtube.com/vi/zGVyul_a5N0/0.jpg" alt="walk">
+                <a class="myButton" href="https://youtu.be/zGVyul_a5N0"target="_blank">early test of game</a>
+            </div>
+            <div class="mainboxmainpage">
+                <img src="https://img.youtube.com/vi/-cbbWTaweds/0.jpg" alt="walk">
+                <a class="myButton" href="https://youtu.be/-cbbWTaweds"target="_blank">early test of game 2</a>
+            </div>
+            <div class="mainboxmainpage">
+                <img src="https://img.youtube.com/vi/eUr6fDKJ6aQ/0.jpg" alt="walk">
+                <a class="myButton" href="https://youtu.be/eUr6fDKJ6aQ"target="_blank">game : bounce</a>
+            </div>
+            <div class="mainboxmainpage">
+                <img src="https://img.youtube.com/vi/cuy3B3pEWVE/0.jpg" alt="walk">
+                <a class="myButton" href="https://youtu.be/cuy3B3pEWVE"target="_blank">game : bug 1</a>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    
+    <div class="main">
+        <div class="boxlayout">
+            <x><a>News and updates</a></x>
+            <div class="mainboxmainpage">
+                <img src="{{ url_for('static', filename='this_site.webp') }}" alt="this site">
+                <ab>this site has finally came out of beta
+                </ab>
+            </div>
+            <div class="mainboxmainpage">
+                <img src="{{ url_for('static', filename='snakegame.webp') }}" alt="snake game">
+                <ab>snake game has been released as an early alpha but wil probably get no more attention
+                </ab>
+            </div>
+            <div class="mainboxmainpage">
+                <img src="https://pronouns-page.s3.eu-west-1.amazonaws.com/card/en/Cyanic_enigma-01G1H2Z5QZQ2YWG7S45H1K4CQ1-dark.png" alt="my pronouns">
+                <ab>pronun page has been created
+                </ab>
+            </div>
+            <div class="mainboxmainpage">
+                <img src="{{ url_for('static', filename='a.webp') }}" alt="my icon">
+                <ab>most of the pictures on this site hve been reduced in quality
+                </ab>
+            </div>
+
+        </div>
+    </div>
+    
 
 </div>
 

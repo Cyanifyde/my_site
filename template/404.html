@@ -1,0 +1,20 @@
+<title>404</title>
+{%extends "layout.html"%}
+{% block content %}
+<div class="all">
+<div class="boxlayout">
+    <div class="mainbox">
+        <img src="{{ url_for('static', filename='errorinv.png') }}" alt="404">
+        <a class="myButton" href="/">Page Not Found<br>What you were looking for is just not there.<br>go somewhere nice</a>
+    </div>
+   
+</div>
+</div>
+<style>
+
+img{
+    border-radius:10px 10px 0px 0px;
+}
+
+</style>
+{%endblock%}

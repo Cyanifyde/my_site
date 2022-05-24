@@ -1,74 +1,26 @@
+<title>Projects</title>
 {%extends "layout.html"%}
 {% block content %}
 
 <style>
-.boxlayout{
-    display: flex;
-    margin:3vmin;
-    margin-top: 3vmin;
-    gap: 3vmin;
-    flex-wrap: wrap;
 
-}
-.mainbox{
-    max-width:400px;
-
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
 img{
     border-radius:10px 10px 0px 0px;
+   
 }
-.myButton{
-	background-color:#c2c2c2;
-	border-radius:0px 0px 8px 8px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:20px;
-	padding:13px 32px;
-	text-decoration:none;
-}
-.myButton:hover {
-	background-color:#757575;
-}
-.midButton{
-	background-color:#c2c2c2;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:20px;
-	padding:13px 32px;
-	text-decoration:none;
-}
-.midButton:hover {
-	background-color:#757575;
-}
-ab{
-    background-color:#757575;
-	border-radius:0px 0px 8px 8px;
-	display:inline-block;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:20px;
-	padding:13px 32px;
-	text-decoration:none;
+.mainimg{
+     width:400px;
+    height:400px;
 }
 </style>
 
 <div class="boxlayout">
     <div class="mainbox">
-        <img src="{{ url_for('static', filename='a.png') }}" alt="my icon">
+        <img class="mainimg" src="{{ url_for('static', filename='a.webp') }}" alt="my icon">
         <ab>this is my project link page. If there is 2 links, the 1st is the implemented thing, the second is the github</ab>
     </div>
     <div class="mainbox">
-        <img src="{{ url_for('static', filename='this_site.png') }}" alt="thissite">
+        <img src="{{ url_for('static', filename='this_site.webp') }}" alt="thissite">
         <a class="myButton" href="https://github.com/pravda-cancri/my-site"target="_blank">This website</a>
     </div>
     <div class="mainbox">
@@ -81,7 +33,7 @@ ab{
     </div>
     <div class="mainbox">
         <img src="{{ url_for('static', filename='snakegame.png') }}" alt="snake game">
-        <a class="midButton" href="{{url_for('snakegame')}}">snake game</a>
+        <a class="myButtonmid" href="{{url_for('snakegame')}}">snake game</a>
         <a class="myButton" href="https://github.com/pravda-cancri/snake-game-alpha"target="_blank">snake game alpha</a>
     </div>
     

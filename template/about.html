@@ -1,7 +1,38 @@
+<title>About me + Info</title>
 {%extends "layout.html"%}
 {% block content %}
-<div class="all">
-    <h1>My about page</h1>
-    <p>This is a test website again</p>
-<div>
+
+<style>
+
+img{
+    border-radius:10px 10px 0px 0px;
+
+}
+.mainimg{
+     width:400px;
+    height:400px;
+}
+</style>
+
+<div class="boxlayout">
+    <div class="mainbox">
+        <img class="mainimg" src="{{ url_for('static', filename='a.webp') }}" alt="my icon">
+        <ab>Contact and about me
+        </ab>
+    </div>
+    <div class="mainbox">
+        <a class="myButtontop" href = "mailto: gliese.58.plsy@gmail.com" target="_blank">Email</a>
+        <a class="myButtonmid" href="https://www.instagram.com/cyanic_enigma/" target="_blank">Instagram</a>
+        <a class="myButtonmid" href="https://github.com/pravda-cancri/" target="_blank">GitHub</a>
+        <a class="myButton" href="https://www.linkedin.com/in/stanley-black/" target="_blank">LinkedIn</a>
+
+    </div>
+
+    <div class="mainbox">
+        <img src="{{ url_for('static', filename='pronouns.webp') }}" alt="my pronouns">
+        <a class="myButton" href="https://en.pronouns.page/@Cyanic_enigma" target="_blank">pronouns page</a>
+    </div>
+
+</div>
+
 {%endblock%}
